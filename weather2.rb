@@ -7,8 +7,6 @@
 #天気予報を発表
 # weather_forecast_result
 
-
-
 #提出用
 require "open-uri"
 require "json"
@@ -18,7 +16,7 @@ require "pry"
 
 csv_data_okinawa = CSV.read("okinawa_area.csv")
 
-def residence_list(csv_data_okinawa)
+---------------------def residence_list(csv_data_okinawa)
   csv_data_okinawa.each.with_index(1) do |place, i|
     puts "No.#{i}, #{place[1]}"
   end
@@ -37,6 +35,7 @@ def residence_select
 end
 
 #--------------------
+
 def data_acquisition(csv_data_okinawa, select_num)
   response = open("http://weather.livedoor.com/forecast/webservice/json/v1?city=#{csv_data_okinawa[select_num - 1][2].to_i}")
 
@@ -46,6 +45,7 @@ def data_acquisition(csv_data_okinawa, select_num)
 end
 
 #-------------------
+
 def weather_forecast_result(result, csv_data_okinawa, select_num)
   puts "[-----明日の天気予報-----]"
 
@@ -70,7 +70,7 @@ def weather_forecast_result(result, csv_data_okinawa, select_num)
 
   puts "明日の気温は#{tomorrow_temperature}度です。"
 
-  if tomorrow_temperature > 10
+  if tomorrow_temperature < 10
     puts "寒いので厚着した方がいいと思います。"
   elsif tomorrow_temperature <= 20
     puts "肌寒いので長袖がいいと思います。"
