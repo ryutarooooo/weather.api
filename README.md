@@ -11,18 +11,20 @@ APIにて取得したデータをRubyだけで実装した天気予報プログ�
 
 ## 機能
 **Rubyのみで制作したアプリとなります**<br>
-- 機能1　ARIにて天気予報を取得
+- 機能1　APIにて天気予報を取得
 - 機能2　選択させて、選択に応じた気温、服装の呼び出しを実装
 ## 使い方
 1.ターミナルで実行。アプリのディレクトリ上で``ruby weather.rb``で実行<br>
 2.画面のメッセージに従い、住んでいる地域を選択
 ## インストール
+```
 $ git clone https://github.com/ryutarooooo/weather.api.git
 $ weather.rb
+```
 ## 作者
 <a href="https://twitter.com/ryutaro_nagata" class="twitter" target="_blank">永田　隆太朗:Twitter</a>
 
 
 ## ライセンス
-This project is licensed free.
+This project is licensed free.<br>
 ご自由にご利用ください
