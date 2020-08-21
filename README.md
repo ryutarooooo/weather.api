@@ -19,7 +19,8 @@ APIにて取得したデータをRubyだけで実装した天気予報プログ�
 ## インストール
 ```
 $ git clone https://github.com/ryutarooooo/weather.api.git
-$ weather.rb
+$ cd weather.api
+$ ruby weather.rb
 ```
 ## 作者
 <a href="https://twitter.com/ryutaro_nagata" class="twitter" target="_blank">永田　隆太朗:Twitter</a>
